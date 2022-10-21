@@ -2,16 +2,16 @@ package org.karoljanic.simpleApplication;
 
 public class Management {
 
-    public static void main(String[] args) {
-        Storage storage = new Storage();
+    public static void main(final String[] args) {
+        final Storage storage = new Storage();
 
-        Factory factory1 = new Factory(storage);
-        Factory factory2 = new Factory(storage);
+        final Factory factory1 = new Factory(storage);
+        final Factory factory2 = new Factory(storage);
 
-        OnlineStore onlineStore = new OnlineStore(storage);
-        StationaryStore stationaryStore = new StationaryStore(storage);
+        final OnlineStore onlineStore = new OnlineStore(storage);
+        final StationaryStore stationaryStore = new StationaryStore(storage);
 
-        storage.addProductType(1,  7.99f);
+        storage.addProductType(1, 7.99f);
         storage.addProductType(2, 29.99f);
         storage.addProductType(3, 53.99f);
 
